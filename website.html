@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="website_style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
+</head>
+<body>
+
+<div id="header">
+ <li id="site_name">Water Warriors</li>
+ <li onclick="scrollto('home');">Home</li>
+ <li onclick="scrollto('about');">About Us</li>
+ <li onclick="scrollto('aboutwaterpollution');">What is Water Pollution?</li>
+ <li onclick="scrollto('altvolunteer');">Alt Volunteer</li>
+ <li onclick="scrollto('contactus');">Contact Us</li>
+</div>
+
+<div id="home">
+  <h2><b>Our Mission</b></h2>
+<p>Our mission for Water Warriors is to educate the youth with problems in our world that are less well known.<br> We want to spread a message that water all around the world is being polluted and there aren't many people taking action. <br>With our project, we hope to share a message worldwide that anyone can help end water pollution whether it's by volunteering <br>with others to clean waterway.<br>Even if you're busy and can't physically volunteer, you can raise awareness to a specific ocean or river <br> that is polluted but hasn't been cared for.<br> We want our users to be informed about water pollution but also be encourage to help the water. </p>
+</div>
+
+<div id="aboutus">
+ <p>In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.</p>
+ <p>TalkersCode.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the Xpert in Web Development.</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+</div>
+
+<div id="contact">
+<h1>Feel free to contact us with any questions or feedback you have! <br> <br><br>or you can fill the form below</h1>
+<input type="text" placeholder="Name">
+<textarea placeholder="Message"></textarea>
+<input type="submit" value="SEND">
+</div>
+
+</body>
+</html>
